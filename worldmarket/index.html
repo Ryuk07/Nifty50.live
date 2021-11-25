@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" lang="en"
+			content="NIFTY 50, stock exchange, technical analysis, chart analysis, intraday chart, historical stock chart, Delayed Quote, stock quote, index, NIFTY, NSE India Stock Exchange">
+		<title>World Market - Live Chart, Live Stock Market News | Nifty50.Live </title>
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<meta name="description"
+			content="Get Live updates on all All World Indexes, Currencies, Commodities, Futures, Premarket, Economic Calender & more. Stock Market Live, Live Index, Live Chart. Get live quotes from the most popular indices and stock markets including the NASDAQ, S&P500, NSE, BSE." />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-192099796-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+
+			gtag('config', 'UA-192099796-1');
+		</script>
+
+
+		<link rel="stylesheet" href="./style.css">
+	</head>
+
+	<body>
+		<div class="navbar">
+
+			<label for="togglericon" class="toggler" checked></label>
+			<input type="checkbox" id="togglericon" class="toggler" />
+
+			<div class="brand">
+				<span class="brand-icon">⚛</span>
+				<span class="brand-name">Nifty50.Live</span>
+			</div>
+
+			<div class="nav">
+				<!-- reposition the menu with: -->
+				<!-- div class="nav at-center" -->
+				<!-- div class="nav at-right"  -->
+
+				<a href="http://127.0.0.1:5500/">NIFTY Chart</a>
+				<!--<a href="#about"></a>-->
+				<a href="http://127.0.0.1:5500/worldmarket/">World Market</a>
+				<a href="http://127.0.0.1:5500/marketdata/">Market Data</a>
+				<a href="http://127.0.0.1:5500/stockscreener/">Stock Screener</a>
+				<a href="http://127.0.0.1:5500/international/">International Charts</a>
+				<a href="http://127.0.0.1:5500/crypto/">Cryptocurrency Charts</a>
+				<div class="dropdown">
+					<label for="toggle-3">Forex</label>
+					<input type="checkbox" id="toggle-3" />
+					<ul>
+						<li><a href="http://127.0.0.1:5500/forexheatmap/">Forex Heatmap</a></li>
+						<li><a href="http://127.0.0.1:5500/forexrates/">Forex Rates</a></li>
+						<!--<li><a href="http://127.0.0.1:5500/niftyit">NIFTY IT Chart</a></li>-->
+					</ul>
+				</div>
+				<div class="dropdown">
+					<label for="toggle-1">Live Charts</label>
+					<input type="checkbox" id="toggle-1" />
+					<ul>
+						<li><a href="http://127.0.0.1:5500/banknifty">NIFTY BANK Chart</a></li>
+						<li><a href="http://127.0.0.1:5500/sgxnifty/">SGX NIFTY Chart</a></li>
+						<li><a href="http://127.0.0.1:5500/indiavix/">India VIX Chart</a></li>
+						<!--<li><a href="http://127.0.0.1:5500/niftyit">NIFTY IT Chart</a></li>-->
+					</ul>
+				</div>
+				<div class="dropdown">
+					<label for="toggle-2">Commodity</label>
+					<input type="checkbox" id="toggle-2" />
+					<ul>
+						<li><a href="http://127.0.0.1:5500/usd-inr/">USD INR Chart</a></li>
+						<li><a href="http://127.0.0.1:5500/gold-chart/">Gold Chart</a></li>
+						<li><a href="http://127.0.0.1:5500/silver-chart/">Silver Chart</a></li>
+						<!--<li><a href="http://127.0.0.1:5500/niftyit">NIFTY IT Chart</a></li>-->
+					</ul>
+				</div>
+				<!--<div class="dropdown">
+                <label for="toggle-2">Social</label>
+                <input type="checkbox" id="toggle-2" />
+                <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Tiktok</a></li>
+                  <li><a href="#">Medium</a></li>
+                </ul>
+              </div>
+              <a href="#">Contact</a>
+              <form>
+                <input type="text" placeholder="search" name="search" />
+                <button>🔎</button>
+              </form>-->
+			</div>
+		</div>
+		<!-- the menu ends here -->
+		<main>
+			<center>
+				<div class="tradingview-widget-container">
+					<div class="tradingview-widget-container__widget"></div>
+					<script type="text/javascript"
+						src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+							{
+								"symbols": [
+									{
+										"proName": "FOREXCOM:SPXUSD",
+										"title": "S&P 500"
+									},
+									{
+										"proName": "FOREXCOM:NSXUSD",
+										"title": "Nasdaq 100"
+									},
+									{
+										"description": "NIFTY 50",
+										"proName": "NSE:NIFTY"
+									},
+									{
+										"description": "SENSEX",
+										"proName": "BSE:SENSEX"
+									},
+									{
+										"description": "NIFTY BANK",
+										"proName": "NSE:BANKNIFTY"
+									},
+									{
+										"description": "DOW JONES",
+										"proName": "DJCFD:DJI"
+									},
+									{
+										"description": "ATX",
+										"proName": "INDEX:ATX"
+									},
+									{
+										"description": "BOSVESPA",
+										"proName": "BMFBOVESPA:IBOV"
+									},
+									{
+										"description": "DAX",
+										"proName": "XETR:DAX"
+									},
+									{
+										"description": "EURO STOXX 50",
+										"proName": "CURRENCYCOM:EU50"
+									},
+									{
+										"description": "NIKKEI 225",
+										"proName": "TVC:NI225"
+									},
+									{
+										"description": "SMI",
+										"proName": "SIX:SMI"
+									}
+								],
+									"showSymbolLogo": true,
+										"colorTheme": "dark",
+											"isTransparent": false,
+												"displayMode": "adaptive",
+													"locale": "in"
+							}
+						</script>
+				</div>
+				<div class="iframeninth">
+					<h2 class="red-text" style="color: black;">World Market</h2>
+					<div class="tradingview-widget-container">
+						<div class="tradingview-widget-container__widget"></div>
+						<script type="text/javascript"
+							src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+								{
+									"colorTheme": "dark",
+										"dateRange": "1D",
+											"showChart": true,
+												"locale": "in",
+													"largeChartUrl": "",
+														"isTransparent": false,
+															"showSymbolLogo": true,
+																"width": "100%",
+																	"height": "650",
+																		"plotLineColorGrowing": "rgba(25, 118, 210, 1)",
+																			"plotLineColorFalling": "rgba(25, 118, 210, 1)",
+																				"gridLineColor": "rgba(42, 46, 57, 1)",
+																					"scaleFontColor": "rgba(120, 123, 134, 1)",
+																						"belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+																							"belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+																								"symbolActiveColor": "rgba(33, 150, 243, 0.12)",
+																									"tabs": [
+																										{
+																											"title": "Indices",
+																											"symbols": [
+																												{
+																													"s": "FOREXCOM:SPXUSD",
+																													"d": "S&P 500"
+																												},
+																												{
+																													"s": "FOREXCOM:NSXUSD",
+																													"d": "Nasdaq 100"
+																												},
+																												{
+																													"s": "FOREXCOM:DJI",
+																													"d": "Dow 30"
+																												},
+																												{
+																													"s": "INDEX:NKY",
+																													"d": "Nikkei 225"
+																												},
+																												{
+																													"s": "INDEX:DEU30",
+																													"d": "DAX Index"
+																												},
+																												{
+																													"s": "FOREXCOM:UKXGBP",
+																													"d": "FTSE 100"
+																												}
+																											],
+																											"originalTitle": "Indices"
+																										},
+																										{
+																											"title": "Commodities",
+																											"symbols": [
+																												{
+																													"s": "CME_MINI:ES1!",
+																													"d": "S&P 500"
+																												},
+																												{
+																													"s": "CME:6E1!",
+																													"d": "Euro"
+																												},
+																												{
+																													"s": "COMEX:GC1!",
+																													"d": "Gold"
+																												},
+																												{
+																													"s": "NYMEX:CL1!",
+																													"d": "Crude Oil"
+																												},
+																												{
+																													"s": "NYMEX:NG1!",
+																													"d": "Natural Gas"
+																												},
+																												{
+																													"s": "CBOT:ZC1!",
+																													"d": "Corn"
+																												}
+																											],
+																											"originalTitle": "Commodities"
+																										},
+																										{
+																											"title": "Bonds",
+																											"symbols": [
+																												{
+																													"s": "CME:GE1!",
+																													"d": "Eurodollar"
+																												},
+																												{
+																													"s": "CBOT:ZB1!",
+																													"d": "T-Bond"
+																												},
+																												{
+																													"s": "CBOT:UB1!",
+																													"d": "Ultra T-Bond"
+																												},
+																												{
+																													"s": "EUREX:FGBL1!",
+																													"d": "Euro Bund"
+																												},
+																												{
+																													"s": "EUREX:FBTP1!",
+																													"d": "Euro BTP"
+																												},
+																												{
+																													"s": "EUREX:FGBM1!",
+																													"d": "Euro BOBL"
+																												}
+																											],
+																											"originalTitle": "Bonds"
+																										},
+																										{
+																											"title": "Forex",
+																											"symbols": [
+																												{
+																													"s": "FX:EURUSD"
+																												},
+																												{
+																													"s": "FX:GBPUSD"
+																												},
+																												{
+																													"s": "FX:USDJPY"
+																												},
+																												{
+																													"s": "FX:USDCHF"
+																												},
+																												{
+																													"s": "FX:AUDUSD"
+																												},
+																												{
+																													"s": "FX:USDCAD"
+																												}
+																											],
+																											"originalTitle": "Forex"
+																										}
+																									]
+								}
+							</script>
+					</div>
+		</main>
+		<script src="" async defer></script>
+		<!--FONT AWESOME-->
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--GOOGLE FONTS-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+		</head>
+
+		<body>
+			<footer>
+				<div class="footer">
+					<div class="row">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-youtube"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+					</div>
+
+					<div class="row">
+						<ul>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Our Services</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+							<li><a href="#">Career</a></li>
+						</ul>
+					</div>
+
+					<div class="row">
+						Copyright © 2021 Nifty50.live. All rights reserved.
+					</div>
+				</div>
+			</footer>
+
+		</body>
+
+</html>
